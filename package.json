@@ -1,10 +1,10 @@
 {
-  "name": "React-Seed",
+  "name": "React-Ingredients",
   "version": "1.0.0",
-  "description": "Seed project for future React applications",
+  "description": "A basic application to add ingredients to a list",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./app.js",
+    "start": "nodemon",
     "jsx": "watchify src/main.jsx -v -t [babelify --presets [ react ] ] -o public/js/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,10 +18,6 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "watchify": "^3.8.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mattjustiss/react-seed.git"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
