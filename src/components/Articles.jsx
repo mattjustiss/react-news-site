@@ -1,10 +1,14 @@
 var React = require('react');
+var Bootstrap = require('react-bootstrap');
+var Well = Bootstrap.Well;
 
 
 var Articles = React.createClass({
    render: function() {
        return (
-           <h1>Articles</h1>
+            <Well>
+                <h1>Articles</h1>
+            </Well>
         );
    }
 });
