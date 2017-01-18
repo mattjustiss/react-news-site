@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>JSX Ingredient List</title>
+        <title>Golf News in React</title>
+        <!-- Material Design fonts -->
+         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Bootstrap Material Design -->
+        <link rel="stylesheet" type="text/css" href="./dist/css/bootstrap-material-design.css">
+        <link rel="stylesheet" type="text/css" href="./dist/css/ripples.min.css">
+        
+        <!-- Font Awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <!-- jQuery -->
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        
     </head>
     <body>
-        <div id="ingredients"></div>
+        <div id="navbar"></div>
+        <div id="main"></div>
         <script type="text/javascript" src="./js/main.js"></script>
+        
+        <!-- Twitter Bootstrap -->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!-- Material Design for Bootstrap -->
+        <script src="./dist/js/material.js"></script>
+        <script src="./dist/js/ripples.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $.material.init();
+            });
+        </script>
     </body>
 </html>

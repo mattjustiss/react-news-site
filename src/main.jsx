@@ -1,5 +1,7 @@
 var React = require("react"),
     ReactDOM = require("react-dom"),
-    ListManager = require("./components/ListManager.jsx");
+    Routes = require("./routes.jsx"),
+    Navigation = require("./components/Navigation.jsx");
     
-ReactDOM.render(<ListManager title="Ingredients" />, document.getElementById("ingredients"));
+ReactDOM.render(React.createElement(Navigation), document.getElementById("navbar"));
+ReactDOM.render(React.createElement(Routes), document.getElementById("main")); 
