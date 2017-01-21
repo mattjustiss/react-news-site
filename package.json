@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon",
-    "jsx": "watchify src/main.jsx -v -t [babelify --presets [ react ] ] -o public/js/main.js",
+    "jsx": "watchify src/main.jsx -v -t [babelify --presets [ react ] ] -t brfs -o public/js/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matt Justiss",
@@ -13,8 +13,11 @@
   "dependencies": {
     "babel-preset-react": "^6.16.0",
     "babelify": "^7.3.0",
+    "blueimp-load-image": "^2.10.0",
+    "blueimp-load-image-browserify": "^1.11.1",
     "bootstrap": "^3.3.7",
     "bootstrap-material-design": "^0.5.10",
+    "brfs": "^1.4.3",
     "browserify": "^13.1.1",
     "express": "^4.14.0",
     "react": "^15.4.1",

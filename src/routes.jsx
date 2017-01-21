@@ -6,8 +6,8 @@ var hashHistory = require('react-router').hashHistory;
 
 var Navigation = require('./components/Navigation.jsx');
 var Landing = require('./components/Landing.jsx');
-var Articles = require('./components/Articles.jsx');
-var Images = require('./components/Images.jsx');
+var ArticlesPage = require('./components/ArticlesPage.jsx');
+var Images = require('./components/ImagesPage.jsx');
 
 var Routes = React.createClass({
     render: function() {
@@ -15,7 +15,7 @@ var Routes = React.createClass({
             <Router history={hashHistory}>
                 <Route path="/" component={Navigation}>
                     <IndexRoute component={Landing}/>
-                    <Route path="/articles" component={Articles}/>
+                    <Route path="/articles" component={ArticlesPage}/>
                     <Route path="/images" component={Images}/>
                 </Route>
             </Router>
